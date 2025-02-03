@@ -12,11 +12,3 @@ The output of the complete pipeline is a number of files that include: a merged_
 
 ## How do I run the pipeline?
 The pipeline can be run by running the script "errors_output.py". This script will execute all the steps of the pipeline, but these can also be run separately if needed. The input arguments to the scripts are detailed in the help messages obtained by running the scripts without arguments. 
-
-## Known errors/bugs (to be corrected):
-
-### Excel returns a message stating files may be corrupted, what do I do?
-For moment being the output files format is saved as plain text with a .xls termination to trick Excel into recognizing these files to open them. However, you may get this error message when opening, you can just click on "open anyways" and the files will work. Future implementations will solve this by using a different module to save and format the output files.
-
-### Error on terminal: No such file or directory
-This error can happen if you don't write correctly the path your input files or to your output folder. Remember that if using this pipeline on windows, you should use ascending diagonal bars (/) instead of the system default descending ones (\\) to separate directories. You may also get this error if you don't create your output directory before executing the pipeline.
